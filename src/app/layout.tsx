@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import AppSidebar from "@/components/Sidebar/AppSidebar";
+import PageTitle from "@/components/PageTitle";
+import localFont from "next/font/local";
+import DataFetcher from "@/components/DataFetch";
+import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const publicSans = localFont({
+  src: "./../assets/fonts/PublicSans-VariableFont_wght.ttf",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +23,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${publicSans.className}  antialiased debug-screens`}>
+        <DataFetcher />
+        <SidebarProvider>
+          <AppSidebar />
+          <div className="pl-8 pb-8 pr-8 w-full">
+            <PageTitle />
+            {children}
+          </div>
+          <Toaster />
+        </SidebarProvider>
       </body>
     </html>
   );
