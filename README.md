@@ -3,10 +3,10 @@
 This project is a personal finance manager web applicaion, designed to help users track their income, expenses, budgets, bills and their savings goals. It provides a user-friendly UI to visualise and manage your finances efficiently.
 
 ## Built With
-**React 19** - generating the UI  
-**TypeScript** - for improved code maintainability / refactoring / DX  
-**NextJS 15** - for server-side rendered components  
-**TailwindCSS** - for styling  
+**React 19** - generating the UI.  
+**TypeScript** - for improved code maintainability / refactoring / DX.  
+**NextJS 15** - for server-side rendered components.  
+**TailwindCSS** - for styling and simple responsive management.     
 **ShadCN** - easy and reusable UI components based on Radix UI and TailwindCSS.  
 **Zustand** - for state management and data persistence in the live demo.  
 
