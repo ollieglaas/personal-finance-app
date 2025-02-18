@@ -1,3 +1,5 @@
+**LIVE DEMO:** https://personal-finance-app-xi.vercel.app/
+
 # Personal Finance Manager
 
 This project is a personal finance manager web applicaion, designed to help users track their income, expenses, budgets, bills and their savings goals. It provides a user-friendly UI to visualise and manage your finances efficiently.
