@@ -1,10 +1,12 @@
 import TransactionsTable from "@/components/Transactions/TransactionsTable";
-import React from "react";
+import React, { Suspense } from "react";
 
 function TransactionsPage() {
   return (
     <div>
-      <TransactionsTable />
+      <Suspense fallback={<div>Loading...</div>}>
+        <TransactionsTable />
+      </Suspense>
     </div>
   );
 }
