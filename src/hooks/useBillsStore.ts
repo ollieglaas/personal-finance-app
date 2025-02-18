@@ -22,7 +22,7 @@ const useBillsStore = create<BillsStore>()(
       setBills: (bills) => set({ bills }),
     }),
     {
-      name: "bills-storage", // Unique name for localStorage key
+      name: "bills-storage",
     }
   )
 );

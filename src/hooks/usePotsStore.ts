@@ -16,11 +16,11 @@ interface PotsStore {
 const usePotsStore = create<PotsStore>()(
   persist(
     (set) => ({
-      pots: [], // Initial state
+      pots: [],
       setPots: (pots) => set({ pots }),
     }),
     {
-      name: "pots-storage", // Unique name for localStorage key
+      name: "pots-storage",
     }
   )
 );

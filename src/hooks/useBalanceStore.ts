@@ -23,9 +23,7 @@ const useBalanceStore = create<BalanceStore>()(
       setBalance: (balance: Balance) => set({ balance }),
     }),
     {
-      name: "balance-storage", // unique name for localStorage key
-      // You can uncomment and customize storage if needed
-      // getStorage: () => sessionStorage, // (optional) by default, 'localStorage' is used
+      name: "balance-storage",
     }
   )
 );

@@ -16,11 +16,11 @@ interface BudgetsStore {
 const useBudgetsStore = create<BudgetsStore>()(
   persist(
     (set) => ({
-      budgets: [], // Initial state
+      budgets: [],
       setBudgets: (budgets) => set({ budgets }),
     }),
     {
-      name: "budgets-storage", // Unique name for localStorage key
+      name: "budgets-storage",
     }
   )
 );

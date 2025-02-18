@@ -18,11 +18,11 @@ interface TransactionsStore {
 const useTransactionsStore = create<TransactionsStore>()(
   persist(
     (set) => ({
-      transactions: [], // Initial state
+      transactions: [],
       setTransactions: (transactions) => set({ transactions }),
     }),
     {
-      name: "transactions-storage", // Unique name for localStorage key
+      name: "transactions-storage",
     }
   )
 );
