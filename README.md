@@ -18,3 +18,4 @@ This project is a personal finance manager web applicaion, designed to help user
 **Savings Goals (Pots)** - Set and track progress towards your savings goals using virtual 'pots'.
 
 ## Images
+![Screenshot 2025-02-18 at 21 11 41](https://github.com/user-attachments/assets/8e393bd4-712a-4631-88b5-7ade622dc809)
