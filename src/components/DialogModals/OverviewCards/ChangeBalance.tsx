@@ -82,7 +82,7 @@ function ChangeBalance({ modalOpen, setModalOpen }: ChangeBalanceProps) {
                 className={`pl-12 tracking-wide font-light py-6 mt-1 mb-6 ${
                   error ? "border-red-500" : "border-gray-500"
                 }`}
-                value={inputValue}
+                value={inputValue || ""}
                 onChange={handleChange}
               />
               <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300" />

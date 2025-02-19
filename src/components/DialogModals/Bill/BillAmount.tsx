@@ -33,7 +33,7 @@ function BillAmount({ amountValue, setAmountValue, error }: BillAmountProps) {
           className={`pl-12 tracking-wide font-light py-6 ${
             error ? "border-red-500" : "border-gray-500"
           } mt-1 mb-6`}
-          value={amountValue}
+          value={amountValue || ""}
           onChange={handleChange}
         />
         <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />

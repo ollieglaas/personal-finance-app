@@ -33,10 +33,11 @@ function MaxSpendInput({
           type="number"
           min={1}
           max={100000}
+          placeholder="e.g 1000"
           className={`pl-12 tracking-wide font-light py-6 ${
             error ? "border-red-500" : "border-gray-500"
           } mt-1 mb-6`}
-          value={maxSpendValue}
+          value={maxSpendValue || ""}
           onChange={handleChange}
         />
         <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
