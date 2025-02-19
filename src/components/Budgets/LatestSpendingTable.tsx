@@ -14,12 +14,14 @@ function LatestSpendingTable({ budget }: BudgetProps) {
   const { category } = budget;
   return (
     <Card className="bg-background border-none">
-      <CardHeader>
-        <CardTitle className="text-xl font-bold flex justify-between items-center">
+      <CardHeader className="p-4">
+        <CardTitle className="text-lg md:text-xl font-bold flex justify-between items-center">
           <span>Latest Spending</span>
           <Link href={"/transactions"}>
-            <Button variant={"link"} className="text-gray-500 space-x-4">
-              <span className="tracking-[0.1px] text-lg">See All</span>
+            <Button variant={"link"} className="text-gray-500 md:space-x-4">
+              <span className="tracking-[0.1px] text-sm md:text-lg">
+                See All
+              </span>
               <Image
                 src={SeeDetailsRightArrow}
                 alt="See Details"
@@ -52,13 +54,13 @@ const SpendingTable = ({ category }: { category: string }) => {
       <TableBody>
         {transactionData.map((transaction) => (
           <TableRow key={transaction.date}>
-            <TableCell className="font-medium py-4">
+            <TableCell className="font-medium py-4 px-0">
               <div className="flex flex-row gap-4 items-center">
                 <Avatar className="hidden lg:block">
                   <AvatarImage src={`${transaction.avatar}`} />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
-                <span className="font-bold">{transaction.name}</span>
+                <span className="md:font-bold">{transaction.name}</span>
               </div>
             </TableCell>
             <TableCell className="text-right">

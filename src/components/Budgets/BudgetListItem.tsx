@@ -10,7 +10,7 @@ function BudgetListItem() {
         <TableBody>
           {budgets.map((budget) => (
             <TableRow key={budget.category}>
-              <TableCell className={`py-4 text-gray-500 font-semibold`}>
+              <TableCell className={`py-4 text-gray-500 font-semibold px-0`}>
                 <span
                   className={`border-l-4 pl-4`}
                   style={{ borderLeftColor: budget.theme }}

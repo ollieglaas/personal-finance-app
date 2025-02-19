@@ -21,7 +21,7 @@ function BudgetsSummary() {
       <CardContent
         className={`flex flex-col lg:flex-col ${
           open ? "xl:flex-row" : "xl:flex-col"
-        } 2xl:flex-col justify-between`}
+        } 2xl:flex-col justify-between p-0 md:p-4`}
       >
         <BudgetsChart />
         <div

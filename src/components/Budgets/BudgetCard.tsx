@@ -28,7 +28,7 @@ function BudgetCard({ budget }: BudgetProps) {
   return (
     <Card
       key={category}
-      className={`p-4 transition-opacity duration-500 ease-in-out ${
+      className={`md:p-4 transition-opacity duration-500 ease-in-out ${
         fadeIn ? "opacity-100" : "opacity-0"
       }`}
     >
