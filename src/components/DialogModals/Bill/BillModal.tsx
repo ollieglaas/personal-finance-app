@@ -99,7 +99,7 @@ function BillModal() {
       <DialogTrigger asChild>
         <Button>
           <Plus />
-          <span>Add New Bill</span>
+          <span className="hidden md:block">Add New Bill</span>
         </Button>
       </DialogTrigger>
       <DialogContent>

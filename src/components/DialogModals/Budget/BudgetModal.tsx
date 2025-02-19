@@ -81,7 +81,7 @@ function BudgetModal() {
       <DialogTrigger asChild>
         <Button>
           <Plus />
-          <span>Add New Budget</span>
+          <span className="hidden md:block">Add New Budget</span>
         </Button>
       </DialogTrigger>
       <DialogContent>

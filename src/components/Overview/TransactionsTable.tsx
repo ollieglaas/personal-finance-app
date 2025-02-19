@@ -30,7 +30,9 @@ const TransactionsTable = () => {
                   <AvatarImage src={`${transaction.avatar}`} />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
-                <span className="font-bold">{transaction.name}</span>
+                <span className="font-normal md:font-bold">
+                  {transaction.name}
+                </span>
               </div>
             </TableCell>
             <TableCell className="text-right">

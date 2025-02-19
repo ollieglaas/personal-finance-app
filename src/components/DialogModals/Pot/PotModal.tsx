@@ -76,7 +76,7 @@ function PotModal() {
       <DialogTrigger asChild>
         <Button>
           <Plus />
-          <span>Add New Pot</span>
+          <span className="hidden md:block">Add New Pot</span>
         </Button>
       </DialogTrigger>
       <DialogContent>

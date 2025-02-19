@@ -4,6 +4,7 @@ import React from "react";
 import BudgetModal from "./DialogModals/Budget/BudgetModal";
 import PotModal from "./DialogModals/Pot/PotModal";
 import BillModal from "./DialogModals/Bill/BillModal";
+import MobileNavMenu from "./MobileNavMenu";
 
 function PageTitle() {
   const pathname = usePathname();
@@ -36,8 +37,13 @@ function PageTitle() {
 
   return (
     <div className="sticky top-0 bg-background z-10 px-4 py-2">
-      <div className="flex flex-row justify-between my-3">
-        <h1 className="text-4xl font-bold">{pageTitle}</h1>
+      <div className="flex flex-row justify-between items-center my-3">
+        <h1 className={`text-3xl font-bold flex flex-row gap-4 items-center`}>
+          {pageTitle}
+          <div className="flex md:hidden">
+            <MobileNavMenu />
+          </div>
+        </h1>
         {includeButton && <AddNewButton />}
       </div>
     </div>

@@ -27,7 +27,7 @@ export default function RootLayout({
         <DataFetcher />
         <SidebarProvider>
           <AppSidebar />
-          <div className="pl-8 pb-8 pr-8 w-full">
+          <div className="pl-2 pb-2 pr-2 lg:pl-8 lg:pb-8 w-full">
             <PageTitle />
             {children}
           </div>
