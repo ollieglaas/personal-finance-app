@@ -41,10 +41,15 @@ function PageTitle() {
         <h1 className={`text-3xl font-bold flex flex-row gap-4 items-center`}>
           {pageTitle}
           <div className="flex md:hidden">
-            <MobileNavMenu />
+            {includeButton && <AddNewButton />}
           </div>
         </h1>
-        {includeButton && <AddNewButton />}
+        <div className="flex md:hidden">
+          <MobileNavMenu />
+        </div>
+        <div className="hidden md:flex">
+          {includeButton && <AddNewButton />}
+        </div>
       </div>
     </div>
   );
