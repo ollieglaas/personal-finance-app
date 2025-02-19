@@ -6,6 +6,7 @@ import PageTitle from "@/components/PageTitle";
 import localFont from "next/font/local";
 import DataFetcher from "@/components/DataFetch";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 
 const publicSans = localFont({
   src: "./../assets/fonts/PublicSans-VariableFont_wght.ttf",
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       {/* body className 'debug-screens' for breakpoint visual */}
       <body className={`${publicSans.className}  antialiased`}>
+        <Analytics />
         <DataFetcher />
         <SidebarProvider>
           <AppSidebar />

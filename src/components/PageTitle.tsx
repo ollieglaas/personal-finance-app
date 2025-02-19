@@ -30,6 +30,8 @@ function PageTitle() {
         return <BudgetModal />;
       case "Bills":
         return <BillModal />;
+      case "Overview":
+        return <BillModal />;
       default:
         return null;
     }
