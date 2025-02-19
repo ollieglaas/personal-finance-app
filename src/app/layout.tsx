@@ -23,7 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.className}  antialiased debug-screens`}>
+      {/* body className 'debug-screens' for breakpoint visual */}
+      <body className={`${publicSans.className}  antialiased`}>
         <DataFetcher />
         <SidebarProvider>
           <AppSidebar />
