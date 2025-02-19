@@ -17,7 +17,6 @@ import { FrequencyOptions } from "../DialogModals/Bill/FrequencyPicker";
 
 import DeleteBill from "../DialogModals/Bill/DeleteBill";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
 
 function BillsTable() {
   const { bills } = useBillsStore((state) => state);
