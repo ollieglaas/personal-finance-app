@@ -1,6 +1,6 @@
 Note: All rights are reserved by **Oliver Glaas**, the repository owner. This project is primarily intended for potential employers to review the code for evaluation purposes. Unauthorised use, distribution or modification of the code without permission is prohibited.
 
-**LIVE DEMO:** https://personal-finance-app-xi.vercel.app/
+[Click for a Live Demo](https://personal-finance-app-xi.vercel-app)
 
 # Personal Finance Manager
 
